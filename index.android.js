@@ -1,6 +1,6 @@
 import { DeviceEventEmitter } from 'react-native';
 
-class KeyEvent {
+export class KeyEvent {
   onKeyDownListener(cb) {
     this.removeKeyDownListener();
     this.listenerKeyDown = DeviceEventEmitter.addListener('onKeyDown', cb);
